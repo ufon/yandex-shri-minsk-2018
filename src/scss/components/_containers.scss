@@ -1,0 +1,18 @@
+.container{
+    max-width: 63rem;
+    margin: auto;
+
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    
+    @include media(md){
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include media(sm){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}

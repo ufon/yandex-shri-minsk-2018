@@ -1,0 +1,106 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.hero{
+    background: $header-color;
+    min-height: 42rem;
+    color: white;
+    padding: 4rem 2.5rem 6rem 40.5rem;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+
+    &__photo{
+        order: 2;
+
+        @include media(md){
+            width: 100%;
+            max-width: 24rem;
+        }
+
+        @include media(sm){
+            width: 100%;
+            max-width: 9rem;
+        }
+    }
+
+    &__avatar{
+        min-width: 34.5rem;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        top:0;
+        order: 2;
+
+        @include media(lg){ 
+            min-width: 26.5rem; 
+        }
+
+        @include media(md){ 
+            min-width: 100%;
+            border-radius: 50%;
+            padding-bottom: 100%;
+
+            position: static;
+        }
+        
+    }
+
+    &__main{
+        order: 1;
+        margin-bottom: 0.725rem;
+    }
+
+    &__description{
+        margin-bottom: 0.725rem;
+
+        @include media(md){
+            line-height: 1.5rem; 
+            font-size: 1rem;
+        }
+        
+        @include media(md){
+            margin-bottom: 0.94rem;
+        }
+
+    }
+
+    &__caption{
+        order: 3;
+        p{
+            line-height: 1.75rem;
+            font-size: 1.25rem;
+            max-width: 34rem;
+
+            @include media(lg){ max-width: 29rem; }
+
+            @include media(md){
+                line-height: 1.5rem; 
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @include media(lg){ 
+        min-height: 48rem; 
+        padding: 4rem 2.5rem 6rem 32.5rem;
+    }
+
+    @include media(md){
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        min-height: 64rem; 
+        padding: 6rem 4rem 9rem 4rem;
+        
+    }
+
+    @include media(sm){ 
+        min-height: 40.5rem;
+        padding: 2rem 1rem 2.63rem 1rem;
+    }
+}

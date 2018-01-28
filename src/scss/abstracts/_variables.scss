@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: Georgia;
+$h-font-stack: Helvetica;
+
+// Font sizes
+$base-font-size: 16px;
+
+/// Copy text color
+/// @type Color
+$text-color: #000 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #DD3E18 !default;
+
+/// Light grey
+/// @type Color
+$light-text-color: #FFF !default;
+
+
+$header-color: #082841 !default;
+
+
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+/// $base-url: 'http://cdn.example.com/assets/';
+$assets-dir: 'assets/' !default;
+$images-dir: 'assets/images/' !default;
+$plugins-dir: 'assets/images/' !default;

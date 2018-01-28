@@ -1,0 +1,261 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+
+footer{
+
+    background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+
+    .footer{
+
+        &__inner{
+            padding-top: 5.06rem;
+            padding-bottom: 9.13rem;
+            
+            @include media(md){
+                padding-top: 2.06rem;
+                padding-bottom: 6.13rem;
+            }
+    
+            @include media(sm){
+                padding-top: 2.69rem;
+                padding-bottom: 4.5rem;
+            }
+        }
+
+        &__content{
+            display: flex;
+            
+            @include media(md){
+                flex-direction: column;
+            }
+        }
+
+        &__caption{
+            display: flex;
+            flex-direction: column;
+            max-width: 25rem;
+            flex: 0 0 25rem;
+            
+
+            p{
+                max-width: 19rem;
+                margin-bottom: 2rem;
+                //padding-right: 3rem;
+            }
+
+            ul{
+                max-width: 9rem;
+                li{
+                    margin-bottom: 0.75rem;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            
+                            img{
+                                margin: 0;
+                                width: 1.25rem;
+                                height: 1.25rem;
+                                margin-right: 0.75rem;
+                            }
+
+                            &:hover{
+                                span{
+                                    border-bottom: 1px dashed $brand-color;
+                                    margin-bottom: -1px;
+                                }
+                                
+                            }
+                        }
+                }
+            }
+
+            @include media(md){
+                flex-direction: row;
+                max-width: 100%;
+                flex: 0 0 100%;
+                p{
+                    max-width: 24rem;
+                    margin-right: 6rem;
+                }
+                ul{
+                    margin-bottom: 2.75rem;
+                    margin-right: 2rem;
+                }
+            }
+
+            @include media(sm){
+                flex-direction: column-reverse;
+                p{
+                    max-width: 100%;
+                    margin-right: 0;
+                }
+                ul{
+                    margin-right: 0rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        &__form{
+            width: 100%;
+
+
+            fieldset{
+                max-width: 34rem;
+                @include media(md){
+                    max-width: 100%;
+                }
+            }
+            
+            input[type=text], input[type=email]{
+                padding: 0.7rem 0.7rem 0.7rem 1rem;
+                margin-bottom: 1.5rem;
+                width: 100%;
+                
+                font-family: Georgia;
+                font-size: 1rem;
+                color: #000000;
+                line-height: 1.5rem;
+
+                border: none;
+                border-radius: 0.25rem;
+
+                transition: box-shadow 300ms ease-in-out;
+
+                &:focus{
+                    outline: none;
+                    box-shadow: 0px 0px 1px black;
+                }
+            }
+
+
+            label {
+                margin-bottom: 2rem;
+                box-sizing:border-box;
+                height: 1.5rem;
+                display: flex;
+                align-items: center; 
+                justify-content: space-between;
+                width:auto;
+                max-width:10rem;
+                height:auto;
+                border:none;
+                cursor:pointer;
+                transition:0.2s ease all;
+
+                .file-icon {
+                    display: inline-block;
+                    width: 1rem;
+                    height: 1.25rem;
+                    background: $brand-color;
+                    position: relative;
+                    -webkit-font-smoothing: antialiased;
+                  }
+    
+                .file-icon::before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-width: 4px;
+                    border-style: solid;
+                    border-color: #e8f0e8 #e8f0e8 rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35);
+                }
+
+                span{
+                    font-family: Helvetica;
+                    font-weight: bold;
+                    line-height: 1.5rem;
+                    color: $brand-color;
+                }
+
+                &:hover {
+
+                    span{
+                        box-shadow: 0 1px 0 $brand-color;
+                    }
+                    
+                }
+            }
+            
+            input[type=file]{
+                display:none;
+            }
+
+            textarea{
+                padding: 0.7rem 0.7rem 0.7rem 1rem;
+                margin-bottom: 1rem;
+                width: 100%;
+
+                max-width: 34rem;
+                min-width: 14rem;
+                min-height: 12rem;
+
+                font-family: Georgia;
+                font-size: 1rem;
+                color: #000000;
+                line-height: 1.5rem;
+
+                border: none;
+                border-radius: 0.25rem;
+
+                transition: box-shadow 300ms ease-in-out;
+
+                &:focus{
+                    outline: none;
+                    box-shadow: 0px 0px 1px black;
+                }
+
+                @include media(md){
+                    max-width: 100%;
+                }
+            }
+
+            input[type=submit]{
+                text-align: center;
+                padding: 0.81rem 0 0.75rem 0;
+                font-family: Helvetica;
+                font-weight: bold;
+                font-size: 1rem;
+                color: #FFFFFF;
+                line-height: 1.5rem;
+                background-color: $brand-color;
+                border-radius: 0.25rem;
+                width: 100%;
+                border: 0;
+
+                transition: all 300ms ease-in-out;
+
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.5);
+                    background-color: rgb(255, 62, 24);
+                }
+            }
+
+        }
+
+    }
+
+    h1{
+        margin-bottom: 3.81rem;
+
+        @include media(md){
+            margin-bottom: 1.31rem;
+        }
+
+        @include media(sm){
+            //margin-bottom: 3.81rem;
+        }
+    }
+
+}   
