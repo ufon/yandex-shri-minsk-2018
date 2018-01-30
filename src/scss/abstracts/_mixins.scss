@@ -137,7 +137,7 @@ $breakpoints: (
 		left: 0;
 		right: 0;
 		opacity: 0;
-		transition: opacity $fade-time ease;
+		transition: opacity $fade-time ease-in-out;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -167,7 +167,7 @@ $breakpoints: (
       border-radius: 50%;
       background-color: $dot-color;
       cursor: pointer;
-      transition: opacity 200ms ease;
+      transition: opacity 200ms ease-in-out;
       &:hover {
         opacity: 0.8;
       }

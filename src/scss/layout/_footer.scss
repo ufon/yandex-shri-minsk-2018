@@ -153,19 +153,20 @@ footer{
                     background: $brand-color;
                     position: relative;
                     -webkit-font-smoothing: antialiased;
-                  }
-    
-                .file-icon::before {
-                    display: block;
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 0;
-                    height: 0;
-                    border-width: 4px;
-                    border-style: solid;
-                    border-color: #e8f0e8 #e8f0e8 rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35);
+                    
+                    &::before {
+                        display: block;
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-width: 4px;
+                        border-style: solid;
+                        border-color: #e8f0e8 #e8f0e8 rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35);
+                    }
+
                 }
 
                 span{
@@ -176,11 +177,9 @@ footer{
                 }
 
                 &:hover {
-
                     span{
                         box-shadow: 0 1px 0 $brand-color;
                     }
-                    
                 }
             }
             
@@ -194,7 +193,7 @@ footer{
                 width: 100%;
 
                 max-width: 34rem;
-                min-width: 14rem;
+                min-width: 10rem;
                 min-height: 12rem;
 
                 font-family: Georgia;

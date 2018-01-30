@@ -20,11 +20,13 @@ var config = {
   cssin: 'src/css/**/*.css',
   jsin: 'src/js/**/*.js',
   imgin: 'src/img/**/*.{jpg,jpeg,png,gif}',
+  svgin: 'src/svg/**/*.svg',
   htmlin: 'src/*.html',
   scssin: 'src/scss/**/*.scss',
   cssout: 'dist/css/',
   jsout: 'dist/js/',
   imgout: 'dist/img/',
+  svgout: 'dist/svg/',
   htmlout: 'dist/',
   scssout: 'src/css/',
   cssoutname: 'style.css',
@@ -80,6 +82,11 @@ gulp.task('img', function() {
     .pipe(gulp.dest(config.imgout));
 });
 
+gulp.task('svg', function() {
+  return gulp.src(config.svgin)
+    .pipe(gulp.dest(config.svgout));
+});
+
 gulp.task('html', function() {
   return gulp.src(config.htmlin)
     .pipe(htmlreplace({
@@ -99,7 +106,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', function() {
-  sequence('clean', ['html', 'js', 'css', 'img']);
+  sequence('clean', ['html', 'js', 'css', 'img', 'svg']);
 });
 
 gulp.task('default', ['serve']);
