@@ -19,20 +19,9 @@ $text-color: #000 !default;
 /// @type Color
 $brand-color: #DD3E18 !default;
 
-/// Light grey
+/// Light text
 /// @type Color
 $light-text-color: #FFF !default;
 
 
 $header-color: #082841 !default;
-
-
-$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-/// $base-url: 'http://cdn.example.com/assets/';
-$assets-dir: 'assets/' !default;
-$images-dir: 'assets/images/' !default;
-$plugins-dir: 'assets/images/' !default;
