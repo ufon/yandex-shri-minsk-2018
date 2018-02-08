@@ -4,6 +4,9 @@
 # Dependency directories
 node_modules
 
+# Build directories
+dist
+
 ### macOS ###
 *.DS_Store
 .AppleDouble

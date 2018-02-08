@@ -113,7 +113,8 @@ $breakpoints: (
 				&:nth-child(#{$i}) {
 					~ .images {
 						.image:nth-child(#{$i}) {
-							opacity: 1;
+              opacity: 1;
+              position: static;
 						}
 					}
 					~ .navigation {
