@@ -63,6 +63,7 @@ footer{
 
                             &:hover{
                                 span{
+                                    
                                     border-bottom: 1px dashed $brand-color;
                                     margin-bottom: -1px;
                                 }
@@ -146,7 +147,7 @@ footer{
                 cursor:pointer;
                 transition:0.2s ease all;
 
-                .file-icon {
+                .file__icon {
                     display: inline-block;
                     width: 1rem;
                     height: 1.25rem;
@@ -177,7 +178,7 @@ footer{
                 }
 
                 &:hover {
-                    span{
+                    .file__button{
                         box-shadow: 0 1px 0 $brand-color;
                     }
                 }
