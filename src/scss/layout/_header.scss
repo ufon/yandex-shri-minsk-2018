@@ -4,7 +4,7 @@
 
 .hero{
     background: $header-color;
-    min-height: 42rem;
+    min-height: 100vh;
     color: white;
     padding: 4rem 2.5rem 6rem 40.5rem;
     position: relative;
@@ -44,7 +44,7 @@
             min-width: 100%;
             border-radius: 50%;
             padding-bottom: 100%;
-
+            margin: 2rem 0;
             position: static;
         }
         
@@ -86,7 +86,6 @@
     }
 
     @include media(lg){ 
-        min-height: 48rem; 
         padding: 4rem 2.5rem 6rem 32.5rem;
     }
 
@@ -94,13 +93,11 @@
         align-items: center;
         align-content: center;
         text-align: center;
-        min-height: 64rem; 
+
         padding: 6rem 4rem 9rem 4rem;
-        
     }
 
     @include media(sm){ 
-        min-height: 40.5rem;
         padding: 2rem 1rem 2.63rem 1rem;
     }
 }
